@@ -1,0 +1,14 @@
+<div class="text-center">
+  <button type="button" class="btn waves-light" (click)="signInWithGoogle()" style="background-color: #dd4b39">
+    <div class="alert alert-danger" role="alert" *ngIf="errorInUserCreate">
+      {{errorMessage.message}}
+    </div>
+    <i class="fa fa-google" aria-hidden="true"></i>
+    Sign in with Google
+  </button>
+
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="errorInUserCreate">
+  <!-- {{errorMessage.message}} -->
+</div>
+
